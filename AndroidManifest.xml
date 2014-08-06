@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sunapps.unitconverter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <!-- User permission for creating shortcut -->
+ <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+ 
+  	<!-- User permission for removing shortcut -->
+ <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+ 
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+	        <activity
+	            android:name="com.sunapps.unitconverter.Main"
+	            android:label="@string/app_name" 
+	            android:windowSoftInputMode="stateHidden">
+	            <intent-filter>
+	                <action android:name="android.intent.action.MAIN" />	
+	                <category android:name="android.intent.category.LAUNCHER"  />
+	            </intent-filter>         
+	        </activity>
+	        
+	        <activity
+	            android:name="com.sunapps.unitconverter.About"
+	            android:label="@string/action_about"
+	            android:icon="@android:color/white" >
+	            <intent-filter>
+	                <action android:name="com.sunapps.unitconverter.ABOUT" />
+	                <category android:name="android.intent.category.DEFAULT" />
+	            </intent-filter>         
+	        </activity>
+
+    </application>
+
+</manifest>

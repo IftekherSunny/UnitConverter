@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView 
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageView1"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/version"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="0dp" 
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="25dp"
+        android:textColor="#101010"
+        android:textSize="14sp"/>
+    
+	    <LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="5dp"
+	    android:paddingBottom="5dp"
+	    android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp" 
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="25dp"
+	    android:background="#D8D8D8"
+	    >
+	
+			<ImageView
+			    android:contentDescription="@string/app_name"
+			    android:id="@+id/imageView2"
+			    android:layout_width="0dp"
+			    android:layout_height="24dp"
+			    android:layout_weight="1"
+			    android:layout_gravity="left"
+			    android:layout_marginTop="3dp"
+			    android:src="@drawable/email" />
+	
+			<TextView  
+			    android:layout_width="0dp" 
+			    android:layout_height="wrap_content" 
+			    android:text="@string/email"
+			    android:layout_weight="5"
+			    android:layout_gravity="right"
+			    android:textSize="14sp"
+			    android:textColor="@android:color/black"
+			    android:paddingTop="5dp"
+			    />
+	
+	
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.37"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:background="#2aa4cd"
+            android:gravity="center"
+            android:paddingBottom="1dp"
+            android:text="&#xD;&#xA;"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+           
+             />
+        
+        
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#F0F0F0"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Copyright © 2014 SUN Apps&#xD;&#xA;All Right Reserved"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12sp"
+            android:textColor="#000000"
+             />
+    </LinearLayout>
+
+</LinearLayout>
